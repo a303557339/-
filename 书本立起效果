@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>3D效果</title>
+<style type="text/css">
+* {
+	padding:0;
+	margin:0;
+}
+.container {
+	width:600px;
+	height:600px;
+	margin:50px auto;
+	border:1px #295d1b solid;
+/*添加舞台*/
+	transform-style: preserve-3d;
+    perspective: 1200px;
+}
+.phone{
+    width:300px;
+    height: 437px;
+    display: block;
+    background: url("img/timg.jpg")0 0/300px 437px no-repeat;
+    box-shadow: -7px 10px 10px #333;
+    transform:rotatex(60deg) rotatey(30deg) rotatez(-25deg);
+    margin:50px auto 0;
+    transform-origin: 50% 50% 100px;
+    transition: all 1.5s ease;
+}
+.phone:hover{
+    box-shadow:-100px 100px 10px #fff;
+    transform:rotate3d(0,0,0,0deg)
+}
+
+</style>
+</head>
+<body>
+<div class="container"><a class="phone" href="javascript:"></a></div>
+</body>
+</html>
+
